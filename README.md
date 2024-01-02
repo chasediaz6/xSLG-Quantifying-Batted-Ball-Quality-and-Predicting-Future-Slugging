@@ -2,14 +2,14 @@
 Utilizing batted ball data in baseball to develop an Expected Slugging (xSLG) metric that quantifies batted ball quality with XGBoost. The xSLG metric is then incorporated into a stacked model to predict a players future slugging %.
 
 ## Overview
-In baseball, there are many statistics we can use to evaluate the a hitter's production. One of the most well-known statistics is slugging percentage (SLG). 
-SLG is a statistic that measures a hitter's power and ability to produce extra-base hits. It is calculated by summing the total bases a player reaches with hits and dividing that by the total number of at-bats. The formula for slugging percentage is:
+In baseball, there are many statistics we can use to evaluate a batter's offensive production. One of the most commonly used statistics is slugging percentage (SLG). 
+SLG is a statistic telling us the average bases earned per at-bat, calculated by summing the total bases a player has earned through hits and dividing that by the total number of at-bats. A player capable of producing extra-base hits fairly often will have a higher SLG than a player who primarily hits singles. The formula for slugging percentage is:
 
 ### **$$SLG= \frac{Total\ Bases}{At-Bats}$$**
 
 For example, if a batter has 10 at-bats on the season, recording 3 hits - 2 singles and a triple, his SLG would be .500, since he recorded 5 total bases over his 10 at bats. $SLG = \frac{5}{10} = .500$
 
-The goal of this project is to estimate a player's "true" slugging, by developing an expected slugging (xSLG) model using batted ball data. There is random noise and luck involved in a players SLG, which impacts their SLG over the course of a season. 
+**The goal of this project is to estimate a player's "true" slugging, by developing an expected slugging (xSLG) model using batted ball data. There is random noise and luck involved in a players SLG, which impacts their SLG over the course of a season.**
 
 ## Approach
 My approach to estimate a players xSLG, and predict future slugging can be broken down into 2 parts. 
