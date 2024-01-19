@@ -20,6 +20,13 @@ My approach to estimate a players xSLG, and predict future slugging can be broke
 **2. Incorporate the xSLG metric and other significant features into a "stacked" model to predict future SLG**
 - Train a linear regression model to predict a player's second half (2H) SLG using xSLG and other significant features as inputs. 
 
+## Results
+
+The stacked linear model achieved the following results:
+- 68% accuracy in predicting whether a player's SLG would increase or decrease in the 2nd half
+- ~19% less RMSE than baseline
+- 37.7% of player seaons had less than .05 error
+
 ## Files
 
 This repository contains the following files and folders, organized as follows:
